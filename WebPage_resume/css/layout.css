@@ -326,60 +326,66 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 
-.photoshop {
-  	width: 60%;
-  	-moz-animation: photoshop 2s ease;
-  	-webkit-animation: photoshop 2s ease;
-}
-.illustrator {
-  	width: 55%;
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
-}
-.wordpress {
-  	width: 50%;
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
-}
-.css {
-  	width: 90%;
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
-}
-.html5 {
+.Python {
   	width: 80%;
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
+  	-moz-animation: Python 2s ease;
+  	-webkit-animation: Python 2s ease;
 }
-.jquery {
+.MatLab {
+  	width: 60%;
+  	-moz-animation: MatLab 2s ease;
+  	-webkit-animation: MatLab 2s ease;
+}
+.Java {
   	width: 50%;
-  	-moz-animation: jquery 2s ease;
-  	-webkit-animation: jquery 2s ease;
+  	-moz-animation: Java 2s ease;
+  	-webkit-animation: Java 2s ease;
 }
-
-@-moz-keyframes photoshop {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
+.C {
+  	width: 85%;
+  	-moz-animation: C 2s ease;
+  	-webkit-animation: C 2s ease;
 }
-@-moz-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
+.Open_Harmony {
+  	width: 60%;
+  	-moz-animation: Open_Harmony 2s ease;
+  	-webkit-animation: Open_Harmony 2s ease;
 }
-@-moz-keyframes wordpress {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
+.Front_Page {
+  	width: 30%;
+  	-moz-animation: Front_Page 2s ease;
+  	-webkit-animation: Front_Page 2s ease;
 }
-@-moz-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-moz-keyframes html5 {
+/* https://www.w3school.com.cn/cssref/pr_keyframes.asp 
+   keyframes 规则, 指定动画. 加载页面时 加载动画.
+   Python{
+      from 100% {width: 0%; }
+      to 100% {width: 80% ;}
+   }
+*/
+@-moz-keyframes Python {
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-moz-keyframes jquery {
+@-moz-keyframes MatLab {
+  0%   { width: 0px;  }
+  100% { width: 60%;  }
+}
+@-moz-keyframes Java {
   0%   { width: 0px;  }
   100% { width: 50%;  }
+}
+@-moz-keyframes C {
+  0%   { width: 0px;  }
+  100% { width: 85%;  }
+}
+@-moz-keyframes Open_Harmony {
+  0%   { width: 0px;  }
+  100% { width: 60%;  }
+}
+@-moz-keyframes Front_Page {
+  0%   { width: 0px;  }
+  100% { width: 30%;  }
 }
 
 @-webkit-keyframes photoshop {
@@ -640,7 +646,8 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #testimonials {
-   background: #1F1F1F url(../images/testimonials-bg.jpg) no-repeat center center;
+   /* background: #1F1F1F url(../images/testimonials-bg.jpg) no-repeat center center; */
+   background: #1F1F1F url(../MyResource/colud.jpg) no-repeat center center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    background-attachment: fixed;
