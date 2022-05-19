@@ -6,17 +6,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body bgcolor="#ABE1FF">
     <table align="center" width="800" cellpadding="2" cellspacing="0">
         <tr>
             <td><a href="./1.html">我的主页</a></td>
             <td><a href="./2.html">计算器</a></td>
             <td><a href="./3.html">特效页面</a></td>
             <td><a href="./4.html">随机切换图片</a></td>
-            <td><a href="./5.html">最后</a></td>
+            <td><a href="./5.html">注册</a></td>
         </tr>
     </table>
     <hr />
+    <h1>联系我! </h1>
+    <h2>请填写您的信息</h2>
+    <table width="600" >
+        <!-- 第一行 -->
+        <tr> 
+            <!-- 左右两个单元格 -->
+            <td>性别:</td>
+            <td>
+                <input type="radio" name="sex" id="nan"> <label for="nan"> <img src="images/man.jpg" > 男 </label>  
+                <input type="radio" name="sex" id="nv"> <label for="nv"><img src="images/women.jpg" > 女</label> 
+            </td>
+        </tr>
+        <!-- 第二行 -->
+        <tr>
+            <td>生日:</td>
+            <td>
+                <form> <!-- 可以加form也可以不加, 原代码是没有form的-->
+                    <select>
+                        <option>--请选择年份--</option>
+                        <option>2010</option>
+                        <option>2011</option>
+                        <option>2012</option>
+                        <option>2013</option>
+                        <option>2014</option>
+                    </select>
+                    <select>
+                            <option>--请选择月份--</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                    </select>
+                    <select>
+                            <option>--请选择日--</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                    </select>
+                </form>
+        
+            </td>
+        </tr>
+        <!-- 第三行 -->
+        <tr>
+            <td>所在地区</td>
+            <td><input type="text" value="北京达"></td>
+        </tr>
+        <!-- 第四行 -->
+        <tr>
+            <td>婚姻状况:</td>
+            <td>
+                    <input type="radio" name="marry" checked="checked">未婚  <input type="radio" name="marry">  已婚  <input type="radio" name="marry"> 离婚
+            </td>
+        </tr>
+         <!-- 第五行 -->
+         <tr>
+             <td>学历:</td>
+             <td><input type="text" value="本科"></td>
+         </tr>
+          <!-- 第六行 -->
+        <tr>
+            <td>爱好:</td>
+            <td>
+                <input type="checkbox" name="love" > 抽烟
+                <input type="checkbox" name="love" > 喝酒
+                <input type="checkbox" name="love" > 烫头
+                <input type="checkbox" name="love" > 泡脚
+                <input type="checkbox" name="love"  checked="checked"> 都喜欢 
+            </td>
+        </tr>
+        <tr>
+            <td>邮箱: </td>
+            <td>
+                <input type="text" >
+            </td>
+        </tr>
+         <!-- 第七行 -->
+        <tr>
+            <td>个人介绍</td>
+            <td>
+                <textarea>个人简介</textarea>
+            </td>
+        </tr>
+        <!-- 第八行 -->
+        <tr>
+            <td></td>  <!-- 左边的单元格为空 -->
+            <td>
+                <input type="submit" value="免费注册" >
+            </td>
+        </tr>
+        <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox"  checked="checked">    我同意注册条款和会员加入标准
+                </td>
+        </tr>
+        <tr>
+                <td></td>
+                <td>
+                    <a href="#" > 我是会员，立即登录</a>
+                </td>
+        </tr>
+           
+    </table>
     
 </body>
 </html>

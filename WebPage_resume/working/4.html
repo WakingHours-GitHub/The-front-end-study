@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="3">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
+
 <body>
     <table align="center" width="800" cellpadding="2" cellspacing="0">
         <tr>
@@ -13,9 +16,17 @@
             <td><a href="./2.html">计算器</a></td>
             <td><a href="./3.html">特效页面</a></td>
             <td><a href="./4.html">随机切换图片</a></td>
-            <td><a href="./5.html">最后</a></td>
+            <td><a href="./5.html">注册</a></td>
         </tr>
     </table>
     <hr />
+    <script lang="javascript">
+        document.write("<h1> 自动刷新, 好图呈现! </h1>");
+        var i = 0;
+        i = Math.round(Math.random() * 6 + 1);
+        document.write("<img src=./refresh/" + i + ".jpg />")
+
+    </script>
 </body>
+
 </html>
