@@ -337,7 +337,7 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: MatLab 2s ease;
 }
 .Java {
-  	width: 50%;
+  	width: 75%;
   	-moz-animation: Java 2s ease;
   	-webkit-animation: Java 2s ease;
 }
@@ -373,7 +373,7 @@ ul#nav li.current a { color: #F06000; }
 }
 @-moz-keyframes Java {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 75%;  }
 }
 @-moz-keyframes C {
   0%   { width: 0px;  }
