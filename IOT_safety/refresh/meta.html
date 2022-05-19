@@ -2,11 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="2">
+    <!-- http-equiv: 会根据他的属性值不同, 来表示显示的什么意思, 用来描述网页, 例如关键字, 告诉机器人索引(机器人向导), 描述页面内容
+        当你的http-equiv: refresh时, content就表示秒数, 以及多少秒进行刷新
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script language="javascript">
+        document.write("<h1> 自动刷新, 好图呈现! </h1>");
+        var i = 0;
+        i = Math.round(1.1); // 四舍五入函数
+        Math.random(); // 生成数字[0, 1)的小数
+        // 生成[1, 9)
+        i = Math.round( Math.random() * 8 + 1);
+        document.write("<img src=./"+i+".jpg />")
+        
+
+
+    </script>   
 </head>
 <body>
+
     
 </body>
 </html>
