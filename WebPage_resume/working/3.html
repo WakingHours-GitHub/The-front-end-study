@@ -92,6 +92,26 @@
       </div>
 
     <script>
+      /*
+      鼠标跟随：就是在鼠标移动的时候, 动画跟随鼠标一起移动.
+      var OEvent = ent || window.event; 初始化event对象
+      然后:
+      docuemnt.onmousemove = funciton(evt); 鼠标跟随就是在鼠标移动的时候发生的事情
+      document.documentElement.scrollTop || document.body.scrollTop;
+      这是为了兼容chrome和其它浏览器，滚动条距上边滚动的距离，chrome用后边那个，其它浏览器用前面那个。
+      最后: 就是把鼠标移动时当前的位置复制给当前元素的位置值.oTop.style.top=oEvent.clientY+scrolltop+10+"px";
+
+      一句话总结: 获取鼠标位置, 然后将元素设置到鼠标的位置上去
+          $(document).mousemove(function(e){ 获取鼠标位置
+          $(document).mousemove(function(e){ 调用的对象是谁, 谁要动, 那么谁就是目标DOM对象
+            $(document).mousemove(function(e){ 设置DOM对象的坐标为mouse
+            //event.pageX/event.pageY鼠标相对于文档的坐标位置。
+            var x=e.pageX+'px';
+            var y=e.pageY+'px';
+            $('#txt').val(x+' '+y)
+            https://www.cnblogs.com/Renyi-Fan/p/9263486.html
+
+      */
         
 
         !function () {
