@@ -6,6 +6,14 @@
     <meta http-equiv="refresh" content="3">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        center {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+    </style>
 
 </head>
 
@@ -21,12 +29,12 @@
     </table>
     <hr />
     <script lang="javascript">
-        document.write("<h1> 自动刷新, 好图呈现! </h1>");
+        document.write("<h1 align='center'> 自动刷新, 好图呈现!  </h1>");
         var i = 0;
         i = Math.round(Math.random() * 6 + 1);
-        document.write("<img src=./refresh/" + i + ".jpg />")
+        document.write("<div align='center'><img align='center' src=./refresh/" + i + ".jpg width='500' /></div>")
 
     </script>
-</body>
-
+</body class="center" >
+    
 </html>

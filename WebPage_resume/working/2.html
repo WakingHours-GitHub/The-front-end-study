@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title></title>
     <script type="text/javascript">
- 
+
         var numresult;
         var str;
-        function onclicknum(nums)
-        {
+        function onclicknum(nums) {
             str = document.getElementById("nummessege");
             str.value = str.value + nums;
         }
-        function onclickclear()
-        {
+        function onclickclear() {
             str = document.getElementById("nummessege");
             str.value = "";
         }
-        function onclickresult()
-        {
+        function onclickresult() {
             str = document.getElementById("nummessege");
             numresult = eval(str.value); // 直接执行表达式
             str.value = numresult;
@@ -27,7 +25,9 @@
     </script>
 
 </head>
+
 <body bgcolor="#ABB2B9 ">
+    <!-- <p style="text-align:center;">123</p> -->
     <table align="center" width="800" cellpadding="2" cellspacing="0">
         <tr>
             <td><a href="./1.html">我的主页</a></td>
@@ -37,98 +37,100 @@
             <td><a href="./5.html">注册</a></td>
         </tr>
     </table>
-    <hr/>
+    <hr />
     <!--定义按键表格,每个按键对应一个事件触发-->
     <!-- 6行4列的表格 -->
-    <table border="1" align="center" bgColor="#34495E"
-           style="height: 350px; width: 270px">
+    <table border="1" align="center" bgColor="#34495E" style="height: 350px; width: 270px">
         <tr>
-            <td colspan="4"> <!--列拓展4个-->
-                <input type="text" id="nummessege"
-                       style="height: 90px; width: 350px; font-size: 50px" />
+            <td colspan="4">
+                <!--列拓展4个-->
+                <input type="text" id="nummessege" style="height: 90px; width: 350px; font-size: 50px" />
             </td>
         </tr>
         <tr>
             <td>
                 <input type="button" value="1" id="1" onclick="onclicknum(1)"
-                       style="height: 70px; width: 90px; font-size: 35px">
+                    style="height: 70px; width: 90px; font-size: 35px">
             </td>
             <td>
                 <input type="button" value="2" id="2" onclick="onclicknum(2)"
-                       style="height: 70px; width: 90px; font-size: 35px">
+                    style="height: 70px; width: 90px; font-size: 35px">
             </td>
             <td>
                 <input type="button" value="3" id="3" onclick="onclicknum(3)"
-                       style="height: 70px; width: 90px; font-size: 35px">
+                    style="height: 70px; width: 90px; font-size: 35px">
             </td>
             <td>
                 <input type="button" value="+" id="add" onclick="onclicknum('+')"
-                       style="height: 70px; width: 90px; font-size: 35px">
+                    style="height: 70px; width: 90px; font-size: 35px">
             </td>
         </tr>
         <tr>
             <td>
                 <input type="button" value="4" id="4" onclick="onclicknum(4)"
-                       style="height: 70px; width: 90px; font-size: 35px">
+                    style="height: 70px; width: 90px; font-size: 35px">
             </td>
             <td>
                 <input type="button" value="5" id="5" onclick="onclicknum(5)"
-                       style="height: 70px; width: 90px; font-size: 35px">
+                    style="height: 70px; width: 90px; font-size: 35px">
             </td>
             <td>
                 <input type="button" value="6" id="6" onclick="onclicknum(6)"
-                       style="height: 70px; width: 90px; font-size: 35px">
+                    style="height: 70px; width: 90px; font-size: 35px">
             </td>
             <td>
                 <input type="button" value="-" id="sub" onclick="onclicknum('-')"
-                       style="height: 70px; width: 90px; font-size: 35px">
+                    style="height: 70px; width: 90px; font-size: 35px">
             </td>
         </tr>
         <tr>
             <td>
                 <input type="button" value="7" id="7" onclick="onclicknum(7)"
-                       style="height: 70px; width: 90px; font-size: 35px">
+                    style="height: 70px; width: 90px; font-size: 35px">
             </td>
             <td>
                 <input type="button" value="8" id="8" onclick="onclicknum(8)"
-                       style="height: 70px; width: 90px; font-size: 35px">
+                    style="height: 70px; width: 90px; font-size: 35px">
             </td>
             <td>
                 <input type="button" value="9" id="9" onclick="onclicknum(9)"
-                       style="height: 70px; width: 90px; font-size: 35px">
+                    style="height: 70px; width: 90px; font-size: 35px">
             </td>
             <td>
                 <input type="button" value="*" id="mul" onclick="onclicknum('*')"
-                       style="height: 70px; width: 90px; font-size: 35px">
+                    style="height: 70px; width: 90px; font-size: 35px">
             </td>
         </tr>
         <tr>
             <td colspan="2">
                 <input type="button" value="0" id="0" onclick="onclicknum(0)"
-                       style="height: 70px; width: 190px; font-size: 35px">
+                    style="height: 70px; width: 190px; font-size: 35px">
             </td>
             <td>
                 <input type="button" value="." id="point" onclick="onclicknum('.')"
-                       style="height: 70px; width: 90px; font-size: 35px">
+                    style="height: 70px; width: 90px; font-size: 35px">
             </td>
             <td>
-                <input type="button" value="/" id="division"
-                       onclick="onclicknum('/')"
-                       style="height: 70px; width: 90px; font-size: 35px">
+                <input type="button" value="/" id="division" onclick="onclicknum('/')"
+                    style="height: 70px; width: 90px; font-size: 35px">
             </td>
         </tr>
         <tr>
             <td colspan="2">
-                <input type="button" value="Del" id="clear"
-                       onclick="onclickclear()"
-                       style="height: 70px; width: 190px; font-size: 35px" />
+                <input type="button" value="clear" id="clear" onclick="onclickclear()"
+                    style="height: 70px; width: 190px; font-size: 35px" />
             </td>
             <td colspan="2">
-                <input type="button" value="=" id="result"
-                       onclick="onclickresult()"
-                       style="height: 70px; width: 190px; font-size: 35px" />
+                <input type="button" value="=" id="result" onclick="onclickresult()"
+                    style="height: 70px; width: 190px; font-size: 35px" />
             </td>
         </tr>
     </table>
 </body>
+
 </html>
+<!-- 
+    eval函数会评估给定的含有Javascript代码的字符串参数，并试图去执行包含在字符串里的表达式或一些列合法的 Javascript语句。
+
+eval函数将把最后一个表达式或语句所包含的值或引用作为返回值。
+ -->
