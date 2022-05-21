@@ -23,6 +23,20 @@
         }
 
     </script>
+    <style>
+        /* 使用CSS内嵌样式 */
+        .button_num {
+            height: 70px;
+            width: 90px;
+            font-size: 35px;
+        }
+
+        .long_button_num {
+            height: 70px;
+            width: 190px;
+            font-size: 35px
+        }
+    </style>
 
 </head>
 
@@ -30,6 +44,7 @@
     <!-- <p style="text-align:center;">123</p> -->
     <table align="center" width="800" cellpadding="2" cellspacing="0">
         <tr>
+            <td><a href="../main.html">简介</a></td>
             <td><a href="./1.html">我的主页</a></td>
             <td><a href="./2.html">计算器</a></td>
             <td><a href="./3.html">特效页面</a></td>
@@ -49,80 +64,79 @@
         </tr>
         <tr>
             <td>
-                <input type="button" value="1" id="1" onclick="onclicknum(1)"
-                    style="height: 70px; width: 90px; font-size: 35px">
+                <input type="button" value="1" id="1" onclick="onclicknum(1)" class="button_num">
+
             </td>
             <td>
-                <input type="button" value="2" id="2" onclick="onclicknum(2)"
-                    style="height: 70px; width: 90px; font-size: 35px">
+                <input type="button" value="2" id="2" onclick="onclicknum(2)" class="button_num">
+
             </td>
             <td>
-                <input type="button" value="3" id="3" onclick="onclicknum(3)"
-                    style="height: 70px; width: 90px; font-size: 35px">
+                <input type="button" value="3" id="3" onclick="onclicknum(3)" class="button_num">
+
             </td>
             <td>
-                <input type="button" value="+" id="add" onclick="onclicknum('+')"
-                    style="height: 70px; width: 90px; font-size: 35px">
+                <input type="button" value="+" id="add" onclick="onclicknum('+')" class="button_num">
+
             </td>
         </tr>
         <tr>
             <td>
-                <input type="button" value="4" id="4" onclick="onclicknum(4)"
-                    style="height: 70px; width: 90px; font-size: 35px">
+                <input type="button" value="4" id="4" onclick="onclicknum(4)" class="button_num">
+
             </td>
             <td>
-                <input type="button" value="5" id="5" onclick="onclicknum(5)"
-                    style="height: 70px; width: 90px; font-size: 35px">
+                <input type="button" value="5" id="5" onclick="onclicknum(5)" class="button_num">
+
             </td>
             <td>
-                <input type="button" value="6" id="6" onclick="onclicknum(6)"
-                    style="height: 70px; width: 90px; font-size: 35px">
+                <input type="button" value="6" id="6" onclick="onclicknum(6)" class="button_num">
+
             </td>
             <td>
-                <input type="button" value="-" id="sub" onclick="onclicknum('-')"
-                    style="height: 70px; width: 90px; font-size: 35px">
+                <input type="button" value="-" id="sub" onclick="onclicknum('-')" class="button_num">
+
             </td>
         </tr>
         <tr>
             <td>
-                <input type="button" value="7" id="7" onclick="onclicknum(7)"
-                    style="height: 70px; width: 90px; font-size: 35px">
+                <input type="button" value="7" id="7" onclick="onclicknum(7)" class="button_num">
+
             </td>
             <td>
-                <input type="button" value="8" id="8" onclick="onclicknum(8)"
-                    style="height: 70px; width: 90px; font-size: 35px">
+                <input type="button" value="8" id="8" onclick="onclicknum(8)" class="button_num">
             </td>
             <td>
-                <input type="button" value="9" id="9" onclick="onclicknum(9)"
-                    style="height: 70px; width: 90px; font-size: 35px">
+                <input type="button" value="9" id="9" onclick="onclicknum(9)" class="button_num">
+
             </td>
             <td>
-                <input type="button" value="*" id="mul" onclick="onclicknum('*')"
-                    style="height: 70px; width: 90px; font-size: 35px">
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <input type="button" value="0" id="0" onclick="onclicknum(0)"
-                    style="height: 70px; width: 190px; font-size: 35px">
-            </td>
-            <td>
-                <input type="button" value="." id="point" onclick="onclicknum('.')"
-                    style="height: 70px; width: 90px; font-size: 35px">
-            </td>
-            <td>
-                <input type="button" value="/" id="division" onclick="onclicknum('/')"
-                    style="height: 70px; width: 90px; font-size: 35px">
+                <input type="button" value="*" id="mul" onclick="onclicknum('*')" class="button_num">
+
             </td>
         </tr>
         <tr>
             <td colspan="2">
-                <input type="button" value="clear" id="clear" onclick="onclickclear()"
-                    style="height: 70px; width: 190px; font-size: 35px" />
+                <input type="button" value="0" id="0" onclick="onclicknum(0)" class="long_button_num">
+
+            </td>
+            <td>
+                <input type="button" value="." id="point" onclick="onclicknum('.')" class="button_num">
+
+            </td>
+            <td>
+                <input type="button" value="/" id="division" onclick="onclicknum('/')" class="button_num">
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" value="clear" id="clear" onclick="onclickclear()" class="long_button_num">
+
             </td>
             <td colspan="2">
-                <input type="button" value="=" id="result" onclick="onclickresult()"
-                    style="height: 70px; width: 190px; font-size: 35px" />
+                <input type="button" value="=" id="result" onclick="onclickresult()" class="long_button_num">
+
             </td>
         </tr>
     </table>
