@@ -1,0 +1,130 @@
+<!-- 
+    网页制作三剑客:
+    DrearmWeaver, Flash, FireWork
+
+    在HTML中嵌入CSS的几种方式
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- 告诉浏览器采用哪一种字符编码方式, 以防止乱码 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS嵌入HTMl中的3种方式</title>
+<!-- 
+    在head标签中使用style标签, 定义样式块对象, 在则会对标签中, 
+
+ -->
+
+</head>
+
+<body>
+    <ins> 下划线 </ins>
+    a<sup>^2</sup> <!-- 右上角加字-->
+    <sub> </sub> <!-- 右下角加字-->
+    <!-- 空格: $nbsp; >: &gt; <: &lt; -->
+
+
+    <!-- 
+        table表格:
+            border: 边框的宽度.
+
+        img: 
+            alt: 图片不存在的提示文本
+            title: 悬停在图片上方的时候显示的文本
+    
+        a: 超链接标签 -> 向服务器发送请求, 连接到某个资源
+            href: 外部链接, 本地资源, + # 锚点定位, 使用id定位
+            target: _blank: 新建窗口
+                    _self: 本串口打开
+        列表: 
+            有序列表: <ol></ol> + <li></li>
+            无序列表: <ul></ul> + <li></li>
+        表单: 收集用户数据, 发送给目标服务器.
+            表单数据格式: url?name=value&name=value由W3C规定, 传输格式, 传输协议
+            <input name="value"> 只有有name属性的input标签才会被提交到远程服务器端
+
+        
+     -->
+
+    <!-- 
+        内敛定义方式: 
+            直接在标签内部定义style, 里面写上CSS语法, 语法如下: 
+            style="样式名: 样式值; 样式名: 样式值; ..."
+            任何一个HTML标签都可以指定style属性. 
+
+        
+        
+     -->
+    <div id="div1" style="
+        background-color: antiquewhite;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 60px;
+        left: 30px;
+        border-style: double;
+        border-width: 1px;
+        border-color: yellowgreen;
+        ">
+        <p>这是使用内敛方式定义HTML的标签</p>
+
+
+    </div>
+
+</body>
+
+</html>
+
+<!-- 
+    1. CSS: Cascading style sheet 即: 层叠样式表语言(不是编程语言, 属于样式表语言, 没有变量, 数据类型, 控制语句)
+    2. 是专门修饰HTML页面的, 让HTML页面更加好看. CSS是为HTML服务的, 所以HTML仍然是主体, CSS是依附在HTML上的, 所以CSS开发仍然需要HTMl文件.
+
+    key point:
+    3. 在HTMl中如何嵌入CSS? -> 三种方式.
+        内敛定义
+        内部定义方式
+        外部定义方式
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+ -->
