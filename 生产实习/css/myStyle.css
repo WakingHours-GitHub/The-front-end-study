@@ -1,0 +1,14 @@
+p{
+    color: yellow;
+
+}
+h3{
+    background-color: pink;
+    /*  背景颜色 */
+}
+
+hr{
+    width: 80%; /* 宽度,*/
+    background-color: aqua;
+    /* 80%是当前页面的80%宽度, 自适应 */
+}

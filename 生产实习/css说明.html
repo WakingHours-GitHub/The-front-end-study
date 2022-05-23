@@ -1,0 +1,72 @@
+<!-- 
+    HTML -> 结构, 决定文本, 出现在什么位置. 定义文本的内容
+    CSS -> 布局和样式, 怎么显示你的文本
+    JavaScript -> 数据和交互 
+    前后端交互, 通过数据库进行渲染
+
+    本节课主要讲CSS部分
+    
+
+
+    
+    
+    
+    
+    
+
+
+
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/myStyle.css">
+    <style>
+        /* 主流, 是使用CSS来定义样式 */
+        /* 
+        CSS中, 包含选择器和声明
+        声明: 使用键值对表示
+        选择器 {
+            声明...
+
+        }
+     
+     */
+        h1 {
+            /* 标签, 直接作为选择器, 那么所有该标签都会使用这个选择器 */
+            color: red;
+            font-size: 14px;
+        }
+
+        /* 创建样式表的方法:
+        CSS有两个主要部分组成: 组成器: 
+        
+        内部样式表: 用<style>标记, type="text/css" 可以省略
+        外部样式表: 外部文件, 拓展名.css, 需要使用link标志引进来
+        内联样式: 直接在标记中写入属性, 在标签中的style属性, 写上属性字符串用来声明标记
+
+     
+     */
+        p { /* 所有的P标记都使用这个选择器, 因为是直接使用标签名作为选择器的 */
+            color: blue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>大家好, 我在h1标记中</h1>
+    <p>我在P标记中</p>
+    <hr/>
+    <h2 style="background-color: red;">内敛样式</h2>
+    
+
+</body>
+
+</html>
