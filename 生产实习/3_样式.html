@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 400px;
+            background-color: wheat;
+        }
+        p{
+            width: auto;
+            height: auto;
+            /* 使用url,用来引导图片路径, 就相当于一块卓木, 在最底层. */
+            background-image: url("./");
+            background-repeat: no-repeat;
+            background-position: right top; 
+            background-size: cover; /* 覆盖背景, 也就是, 将内容完全填充到这个标签上*/
+            background-size: contain; /* 包含内容, 让内容显示全 */
+            background-size: 50% 50%; /* 横, 纵, 内容.*/
+            border: 2px red; /* border, 边界 */
+
+        }
+        .font-right{
+            /* 文字所在的元素对齐方式, 默认是左上角. */
+            text-align: center;
+            /* 字间距 */
+            letter-spacing: 20px;
+            
+        }
+        .h-v-center{
+            /* 水平方向居中 */
+            text-align: center;
+            /* 通过设置行高, 在垂直方向居中 */
+            line-height: 50%;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="font-right">
+        麻了, 在div标签中
+
+    </div>
+
+    <br>
+    <br>
+    <p>male</p>
+
+    <div class="h-v-center">我要在最中间</div>
+
+
+    
+    
+</body>
+</html>
+
+<!-- 
+    常用样式: 
+    1. 背景: 
+        
+        常用属性: 
+            background-color: 背景名称, RGB值
+            background-image: url(图片路径)
+            backgroung-repeat: 在什么方向重复: 
+                repeat-x在x轴重复, repeat-y: , no-repeat
+            background-postion: 
+    2. 文本: 
+    3. 字体:
+
+    
+    
+    
+    
+ -->

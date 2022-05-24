@@ -13,8 +13,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS嵌入HTMl中的3种方式</title>
+    <link rel="stylesheet" href="">
 <!-- 
     在head标签中使用style标签, 定义样式块对象, 在则会对标签中, 
+    在<style>标签中, 写入样式块对象, 
+
+    当多个元素被多个样式表定义时: 遵循就近原则. 
+        内敛 -> 内部 -> 外部 -> 浏览器默认样式
+        离标签越近, 那么优先级就越大, 那么也就遵循该种样式表
+    一个样式表也可以被多个html页面引用
+
+
 
  -->
 
@@ -87,6 +96,9 @@
         内敛定义
         内部定义方式
         外部定义方式
+    
+
+        
 
 
 

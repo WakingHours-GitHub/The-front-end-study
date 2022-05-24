@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 标签选择器 */
+        p{
+            color: aqua;
+        }
+        body{
+            color: chartreuse;
+        }
+        /* 类选择器 */
+        .classp1{
+            color: aquamarine;
+        }
+        /* id选择器 */
+        #p3{
+            color:red;
+        }
+        /* 分组选择器 */
+        h2, .classp1, #p4{
+            color: pink;
+        }
+        /* 元素选择器, 这里表示, 定义div中的p标签的样式表, div和p元素的本身是没有变的, 只有是div中的p标签, 才会被应用 */
+        div p{
+            color: blanchedalmond;
+            
+        }
+        /* 表示div中的div标签, 应用该样式表 */
+        div div{
+            background-color: antiquewhite;
+        }
+        /* 表示只有在div里面, 标签class属性,为class_1的元素,应用该样式表 */
+        div .class_1{
+            font-size: 40px;
+            background-color: rgb(188, 159, 120);
+        }
+
+
+    </style>
+</head>
+<body>
+    我不在任何元素中, 但是我在body元素中, body也是一个元素, 当设置父元素时, 子元素如果没有特殊的样式, 那么也就遵循父
+    <p>内部样式, aqua颜色的p标签</p>
+
+
+    <!-- span是行内标记, 可见, span是不换行的  -->
+    <span>我是span标记</span>
+    <span>我是标记</span>
+    
+    
+</body>
+</html>
+
+<!--
+    
+    CSS选择器:
+        基本选择器:
+        1. 标记选择器: 直接使用该标签即可设置该标签的样式
+            例子: p{
+                key: value;
+                ...
+            }
+        2. 类选择器: 可以应用在指定的多个元素中, 使用class属性即可
+            例子: .classp1{
+                key: value;
+            }
+            在定义的时候有., 但是在属性: class=""中, 是没有点的.
+        3. id选择器: 只能应用在指定id元素中
+            例子: #id{
+                key: value;
+            }
+            以#开头, 后面直接接要应用的id号.
+        4. 分组选择器: 
+        当左侧有多个用','隔开的选择器, 都会应用这个属性列表
+        格式: 选择器1, 选择器2, ...{属性列表}
+        其中, 选择器
+    
+        5. 后代选择器
+            只应用到最右侧的选择器.
+            
+        这几种选择器的优先级: 一般来说不冲突的话, 那么就会叠加, 如果有冲突的话那么就要遵循优先级来渲染
+            优先级: id选择器 > 类选择器 > 标签选择器
+            在开发项目时, 我们要避免元素要避免冲突.
+    样式会往下继承
+    
+    常用样式: 
+        1. 背景: 
+            
+            常用属性: 
+                background-color: 背景颜色
+    
+    
+  -->
