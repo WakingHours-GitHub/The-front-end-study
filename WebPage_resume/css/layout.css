@@ -248,11 +248,19 @@ ul#nav li.current a {
 }
 
 #about .profile-pic {
+   position: center;
+   width: 180px;
+   /* height: 120px; */
+   /* border-radius: 100%; */
+   border-radius: 3%;
+}
+/* 原来的图片样式： */
+/* #about .profile-pic {
    position: relative;
    width: 120px;
    height: 120px;
    border-radius: 100%;
-}
+} */
 
 #about .contact-details {
    width: 41.66667%;
