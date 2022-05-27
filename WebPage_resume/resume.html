@@ -36,6 +36,9 @@
    <!-- Favicons
 	================================================== -->
    <link rel="shortcut icon" href="favicon.png">
+   <style>
+      
+   </style>
 
 </head>
 
@@ -583,16 +586,17 @@
          <div class="eight columns">
 
             <!-- form -->
-            <form action="main.php" method="post" id="contactForm" name="contactForm">
+            <!-- 填写表单域, 向我发送邮件信息 -->
+            <form action="send.php" method="post" id="contactForm" name="contactForm">
                <fieldset>
 
                   <div>
-                     <label for="contactName">Name <span class="required">*</span></label>
+                     <label for="contactName">You's Name <span class="required">*</span></label>
                      <input type="text" value="" size="35" id="contactName" name="contactName">
                   </div>
 
                   <div>
-                     <label for="contactEmail">Email <span class="required">*</span></label>
+                     <label for="contactEmail">You's Email<span class="required">*</span></label>
                      <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
                   </div>
 
