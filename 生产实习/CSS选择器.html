@@ -21,16 +21,16 @@
         #p3{
             color:red;
         }
-        /* 分组选择器 */
+        /* 分组选择器, 表示h2标签, 和classp1类, 以及id=p4的元素都使用该样式 */
         h2, .classp1, #p4{
             color: pink;
         }
-        /* 元素选择器, 这里表示, 定义div中的p标签的样式表, div和p元素的本身是没有变的, 只有是div中的p标签, 才会被应用 */
+        /* 这里表示, 定义div中的p标签的样式表, div和p元素的本身是没有变的, 只有是div中的p标签, 才会被应用 */
         div p{
             color: blanchedalmond;
             
         }
-        /* 表示div中的div标签, 应用该样式表 */
+        /* 后代选择器: 表示div中的div标签, 应用该样式表 */
         div div{
             background-color: antiquewhite;
         }
@@ -44,7 +44,8 @@
     </style>
 </head>
 <body>
-    我不在任何元素中, 但是我在body元素中, body也是一个元素, 当设置父元素时, 子元素如果没有特殊的样式, 那么也就遵循父
+    我不在任何元素中, 但是我在body元素中, body也是一个元素, 当设置父元素时, 子元素如果没有特殊的样式, 那么也就遵循父类的样式表
+    
     <p>内部样式, aqua颜色的p标签</p>
 
 
