@@ -162,7 +162,7 @@
                <div class="columns download">
                   <p>
                      <!-- 下载简历 -->
-                     <a href="./MyResource/TEMP.pdf" class="button" target="_blank">
+                     <a href="./MyResource/zeng.pdf" class="button" target="_blank">
                         <i class="fa fa-download"></i>Download Resume
                      </a>
 
@@ -264,7 +264,7 @@
                <div class="twelve columns">
 
                   <!-- <h3>Awesome Design Studio</h3> -->
-                  <h3>No Work Temporary</h3>
+                  <h3>No Work temporary</h3>
                   <p class="info">Student % developer <span>&bull;</span> <em class="date">2016 - Present</em></p>
                   <p>
                      显然, 一个没有毕业的学生能够有什么像样的工作呢, 一个共同唯一的身份就是学生.<br>
@@ -471,7 +471,7 @@
             </div>
 
             <div class="link-box">
-               <a href="https://github.com/WakingHours-GitHub/Deep_Learning/tree/master/LibraryPictureCode/CNN"
+               <a href="https://github.com/WakingHours-GitHub/Deep_Learning/tree/master/%E7%88%AC%E5%8F%96%E5%9B%BE%E4%B9%A6%E9%A6%86%E5%9B%BE%E7%89%87/CNN"
                   target="_blank">GitHub</a>
                <a class="popup-modal-dismiss">Close</a>
             </div>
