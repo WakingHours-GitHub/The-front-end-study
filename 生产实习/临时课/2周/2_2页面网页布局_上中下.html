@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上中下布局</title>
+    <style>
+        div{
+            text-align: center;
+            margin: 5px auto;
+        }
+        div div{
+            height: 300px;
+            width: 50%;
+            margin: 5px 5px;
+            
+        }
+        .header{
+            height: 100px;
+            width: 100%;
+            background-color: rgb(111, 111, 111);
+        }
+        .mid{
+            width: 600px;
+            height: 100%;
+            margin: 10px auto;
+            text-align: center;
+            align-content: center;
+            border: 2px red solid ;
+            overflow: hidden;
+
+            
+        }
+        .left{
+            float: left;
+            width: 200px;
+            background-color: aquamarine;
+        }
+        .right{
+            float: right;
+            width: 200px;
+            background-color:aqua;
+        }
+        .footer{
+            background: yellow;
+            clear: both; /* 清除前面的浮动 */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        头部
+    </div>
+    
+    <div class="mid">
+        <div class="left">mid-left</div>
+        <div class="left">mid-right</div>
+    </div>
+
+    <div class="footer">
+        底部
+    </div>
+    
+</body>
+</html>

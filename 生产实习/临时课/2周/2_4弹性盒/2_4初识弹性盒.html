@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性盒布局</title>
+
+
+
+</head>
+5
+<style>
+    .flex-box{
+        border: 2px blue ridge;
+        /* display设为flex后, 该盒子即为弹性容器, 里面的小盒子为该弹性盒子窗口的子项目 */
+        display: flex;
+        /* 默认情况下, 会将其中的项目在一排渲染. */
+
+    }
+    .flexitem{
+        /* 子项目的宽度在弹性盒中, 如果宽度不够, 子项目会自动变化(变窄) */
+        /* width: 100px; */
+        /* 为100%时候, 那么说明子项目中的项目铺满弹性盒的大小 */
+        width: 100%;
+        height: 100px;
+        background-color: yellow;
+        border: 2px dotted red;
+    }
+</style>
+
+<body>
+    <div class="flex-box">
+        <div class="flexitem"></div>
+        <div class="flexitem"></div>
+        <div class="flexitem"></div>
+        <div class="flexitem"></div>
+        <div class="flexitem"></div>
+        <span class="flexitem">span标签</span>
+        <a href="" class="flexitem">a标签</a>
+        <div class="flexitem"></div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* *表示所有选择器,  */
+
+*{
+    margin: 0;
+    padding: 0;
+    /*  */
+    list-style: none;
+    list-style-type: none;
+    /* 去除下划线 */
+    text-decoration: none;
+}
+body{
+    align-content: center;
+}
+div{
+    background-color: #787878;
+    width: 600px;
+    align-content: center;
+}
+hr{
+    width: 98%;
+    margin: auto auto;
+    
+    clear: both;
+    list-style: solid ;
+    border: red 2px solid;
+}
+ul{
+    width: 500px;
+    margin: 0 auto;
+}
+
+li{
+    width: 100px;
+    height: 50px;
+    margin: auto 0px;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgb(131, 131, 131);
+    float: left;
+}
+li:hover{
+    background-color: red;
+}
+li:hover a{
+    font-size: large;
+    font-weight: bold;
+    /* color: rgb(110, 85, 163); */
+}
+a{
+    color: #FFFFFF;
+}
+.menu{
+    border-left-width: 2px red solid;
+}
+/* 问题出在这里, 因为是ul的display属性, 所以最终需要设定的标签是.menu中的ul
+    hover是依附在元素上, 不要有空格
+*/
+.menu li:hover ul:not(.menu li ul li ul ){
+    display: block;
+    
+    
+}
+.lever-3-menu{
+    display: none;
+}
+
+
+
+.menu ul{
+    clear: both;
+    display: none;
+    
+}
+
+.menu li ul li {
+    clear: both;
+    height: 35px;
+    line-height: 35px;
+    color: antiquewhite;
+    background-color: #787878;
+    font-size: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+.menu li ul li a{
+    font-size: small;
+    color: antiquewhite;
+}
+
+.menu li ul li:hover{
+    background-color: rgb(176, 13, 13);
+
+}
+
+.menu li ul li:hover a:not(.menu li ul li ul a){
+    font-size: 15px;
+}
+
+.menu li ul li:hover ul{
+    display: list-item;
+    font-size: 10px; 
+
+    
+}
+.menu li ul li ul li:hover{
+    background-color: #a70681;
+    
+
+}
+
+.menu li ul li ul{
+    /* background-color:rgb(176, 13, 13); */
+    width: 120px;
+    clear: both;
+    position: relative;
+    top: -36px;
+    left: 100px;
+    /* 没找到更好的方法, 可能需要使用div */
+    /* position: absolute; */
+    /* top: 52px; */
+    /* left: 532.5px; */
+
+    display: none;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>块级元素学习</title>
+</head>
+<style>
+    table{
+        background-color: yellow;
+        /* width: 100%; */
+    }
+    p{
+        background-color: aqua;
+        width: 30%;
+    }
+    div{
+        background-color: black;
+        color: white;
+        width: 30%;
+        height: 300px;
+    }
+    ul{
+        background-color: aquamarine;
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        margin: 0;
+    }
+    .styleli2{
+        background-color: bisque;
+    }
+    form{
+        background-color: brown;
+    }
+    h1{
+        background-color: red;
+    }
+</style>
+<body>
+    <!-- 表格标记的宽度并不是默认的100%，而是根据表格中的内容自动填充的宽度 -->
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+    </table><p>我在p标记中</p><div>我在div标记中</div><ul>
+        <li>我是第一项</li>
+        <li class="styleli2">我是第二项</li>
+        <li>我是第三项</li>
+    </ul><form action="">我在form标记中</form>
+    <!-- div标记现在的宽度是body的30%，所以其子元素的100%就是body的30%,也就是div的宽度 -->
+    <div>
+        我在div标记中
+        <h1>我在div中的h1标记中</h1>
+        我在div标记中的h1标记后面
+    </div>
+    <div style="background-color: yellow;"></div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作业2, 常见的页面布局</title>
+    <style>
+        body{
+            background-color: orange;
+        }
+        div {
+            /* border: red ridge 5px; */
+            margin: 0px auto;
+        }
+        div div{
+            height: 100%;
+
+        }
+        /* 居中 */
+        .center{
+            width: 90%;
+            margin: 5px auto;
+            align-content: center;
+
+            background-color: antiquewhite;
+        }
+        .content{
+            height: 600px;
+
+        }
+        .left{
+            float: left;
+            width: 20%;
+            background-color: aqua;
+            margin-left: 5px;
+        }
+        .right{
+            float: right;
+            width: 79%;
+            background-color: aquamarine;
+
+        }
+        .footer{
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 类属性也是可以叠加的, 用空格隔开, 有冲突的情况, 以最后面的类为准.
+        类选择器是可以累加的. 
+    -->
+    <div class="center header">header</div>
+    <div class="center content">
+        <div class="left">左自适应</div>
+        <div class="right">右自适应</div>
+    </div>
+    <div class="center footer">footer</div>
+    
+    
+</body>
+</html>

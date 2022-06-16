@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 需要加上这样一句, 用来适应设备宽度. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        移动端开发. 需要注意的事项,
+        1. <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            使用该行语句, 控制页面宽度为设备的宽度.
+        2. 使用当代主流浏览器, 一般采用谷歌的V8引擎, 进行渲染. 
+            使用模拟器进行模拟开发
+        
+    
+    -->
+    <link rel="stylesheet" href="./style/maoyan.css">   
+
+</head>
+<body>
+    <div class="fix_header">
+    <!-- 最上面的标识 -->
+    <div class="header">
+        <div></div>
+        <div style="font-size:large">猫眼电影</div>
+        <div class="header_img"><img src="//p0.meituan.net/scarlett/f05f61e7a8f3f45fd071c068d7a26870356.png"></div>
+    </div>
+
+    <!-- Logo部分 -->
+    <div class="logo">
+        <div class="logo_img"><img src="./resources/maoyan.png@80q"></div>
+        <div class="logo_find_new_moive">发现最新最热电影</div>
+        <div class="logo_open_app">打开APP></div>
+    </div>
+
+    <!-- 导航栏部分 navigation part -->
+    <div class="nav">
+        <div class="nav_address">
+            <span>哈尔滨</span>
+            <span class="down_triangle"></span>
+        </div>
+        <div class="nav_main_nav">
+            <span class="active">热映</span>
+            <span>影院</span>
+            <span>待映</span>
+            <span>经典电影</span>
+        </div>
+        <div class="nav_serach">
+            <img src="./resources/search-red.png" alt="">
+        </div>
+    </div>
+</div>
+    
+    <!-- 最受喜欢电影. -->
+    <div class="fav_films">
+        <div class="fav_films_text">最受好评电影</div>
+        <!-- 电影部分 -->
+        <div class="fav_films_films">
+            <!-- 每一步电影和文字 -->
+            <ul class="films">
+                <!-- 1 -->
+                <li class="film">
+                    <div class="film_img_box">
+                        <img src="./resources/films/1.jpg" alt="">
+                        <span class="gradient"></span>
+                        <span class="commend_score">观众评分:8.8</span>
+                    </div>
+                    <div class="film_text_box">坏蛋联盟</div>
+                </li>
+                
+                
+                <!-- 2 -->
+                <li class="film">
+                    <div class="film_img_box">
+                        <img src="./resources/films/2.jpg" alt="">
+                        <span class="gradient"></span>
+                        <span class="commend_score">观众评分:8</span>
+                    </div>
+                    <div class="film_text_box">精灵旅社4</div>
+                </li>
+      
+                <!-- 3 -->
+                    <li class="film">
+                        <div class="film_img_box">
+                            <img src="./resources/films/3.jpg" alt="">
+                            <span class="gradient"></span>
+                            <span class="commend_score">观众评分:8.9</span>
+                        </div>
+                        <div class="film_text_box">唐顿庄园2</div>
+                    </li>
+                    <!-- 4 -->
+                    <li class="film">
+                        <div class="film_img_box">
+                            <img src="./resources/films/4.jpg" alt="">
+                            <span class="gradient"></span>
+                            <span class="commend_score">观众评分:8.5</span>
+                        </div>
+                        <div class="film_text_box">暗恋·橘生淮南</div>
+                    </li>
+                    <!-- 5 -->
+                    <li class="film">
+                        <div class="film_img_box">
+                            <img src="./resources/films/5.jpg" alt="">
+                            <span class="gradient"></span>
+                            <span class="commend_score">观众评分:8.2</span>
+                        </div>
+                        <div class="film_text_box">哆啦A梦</div>
+
+                    </li>
+                    <!-- 6 -->
+                    <li class="film">
+                        <div class="film_img_box">
+                            <img src="./resources/films/6.jpg" alt="">
+                            <span class="gradient"></span>
+                            <span class="commend_score">观众评分:8</span>
+                        </div>
+                        <div class="film_text_box">侏罗纪世界3</div>
+                        
+                    </li>
+
+                    <!-- 7 -->
+                    <li class="film">
+                        <div class="film_img_box">
+                            <img src="./resources/films/7.jpg" alt="">
+                            <span class="gradient"></span>
+                            <span class="commend_score">观众评分:7.6</span>
+                        </div>
+                        <div class="film_text_box">神奇动物</div>
+                        
+                    </li>
+                    <!-- 8 -->
+                    <li class="film">
+                        <div class="film_img_box">
+                            <img src="./resources/films/8.jpg" alt="">
+                            <span class="gradient"></span>
+                            <span class="commend_score">1234人想看</span>
+                        </div>
+                        <div class="film_text_box">天才计划</div>
+                        
+                    </li>
+                    
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- 具体的电影部分, 有介绍, 有购票  -->
+    <div class="specific_films_box">
+        <!-- 电影列表 -->
+        <ul class="specific_films">
+            <!-- 1 -->
+            <li class="specific_film">
+                <div class="specific_film_img">
+                    <img src="./resources/pic/1.jpg" alt="">
+                </div>
+                <div class="specific_film_text">
+                    <p class="film_name">侏罗纪世界3</p>
+                    <p>观众评分: <span class="audiendce_score">8.0</span></p>
+                    <p>主演: 克里斯 帕斯特,</p>
+                    <p>今天135家影院放映1597场</p>
+                </div>
+                <div class="specific_film_button">
+                    <button>购票</button>
+                </div>
+            </li>
+            
+            <li class="specific_film">
+                <div class="specific_film_img">
+                    <img src="./resources/pic/2.jpg" alt="">
+                </div>
+                <div class="specific_film_text">
+                    <p class="film_name">暗恋·橘生淮南</p>
+                    <p>观众评分: <span class="audiendce_score">8.4</span></p>
+                    <p>主演: 张雪迎,幸云来</p>
+                    <p>今天135家影院放映404场</p>
+                </div>
+                <div class="specific_film_button">
+                    <button>购票</button>
+                </div>
+            </li>
+
+            <li class="specific_film">
+                <div class="specific_film_img">
+                    <img src="./resources/pic/3.jpg" alt="">
+                </div>
+                <div class="specific_film_text">
+                    <p class="film_name">人生大事</p>
+                    <p><span class="audiendce_score">1234</span>人想看</p>
+                    <p>主演: 不是我,朱一龙</p>
+                    <p>今天1家影院放映11场</p>
+                </div>
+                <div class="specific_film_button">
+                    <button>购票</button>
+                </div>
+            </li>
+
+            <li class="specific_film">
+                <div class="specific_film_img">
+                    <img src="./resources/pic/4.jpg" alt="">
+                </div>
+                <div class="specific_film_text">
+                    <p class="film_name">坏蛋联盟</p>
+                    <p>观众评分: <span class="audiendce_score">9.1</span></p>
+                    <p>主演: 不是我,离谱</p>
+                    <p>今天145家影院放映512场</p>
+                </div>
+                <div class="specific_film_button">
+                    <button>购票</button>
+                </div>
+            </li>
+            
+            <li class="specific_film">
+                <div class="specific_film_img">
+                    <img src="./resources/pic/5.jpg" alt="">
+                </div>
+                <div class="specific_film_text">
+                    <p class="film_name">天才计划</p>
+                    <p>观众评分: <span class="audiendce_score">9.2</span></p>
+                    <p>主演: 丹吉尔,布隆</p>
+                    <p>今天1325家影院放映320场</p>
+                </div>
+                <div class="specific_film_button">
+                    <button>购票</button>
+                </div>
+            </li>
+
+            <li class="specific_film">
+                <div class="specific_film_img">
+                    <img src="./resources/pic/6.jpg" alt="">
+                </div>
+                <div class="specific_film_text">
+                    <p class="film_name">一周的朋友</p>
+                    <p>观众评分: <span class="audiendce_score">7.9</span></p>
+                    <p>主演: 马儿扎哈,古力娜扎</p>
+                    <p>今天1145家影院放映12场</p>
+                </div>
+                <div class="specific_film_button">
+                    <button>购票</button>
+                </div>
+                
+            </li>
+            <!-- 占位 -->
+            <li class="specific_film">
+                <div class="specific_film_img">
+
+                </div>
+                <div class="specific_film_text">
+                </div>
+                <div class="specific_film_button">
+                </div>
+            </li>
+
+
+            
+
+    </div>
+
+    <!-- bottom_bar -->
+    <div class="bottom_bar">
+        <div class="bottom_item active">
+            <div class="bottom_item_img" ><img src="./resources/icon/1.png" alt=""></div>
+            <span class="bottom_item_text">电影/影院</span>
+        </div>
+        <div class="bottom_item">
+            <div class="bottom_item_img"><img src="./resources/icon/2.png" alt=""></div>
+            <span class="bottom_item_text">视频</span>
+        </div>
+        <div class="bottom_item">
+            <div class="bottom_item_img"><img src="./resources/icon/3.png" alt=""></div>
+            <span class="bottom_item_text">小视频</span>
+        </div>
+        <div class="bottom_item">
+            <div class="bottom_item_img"><img src="./resources/icon/4.png" alt=""></div>
+            <span class="bottom_item_text">演出</span>
+        </div>
+        <div class="bottom_item">
+            <div class="bottom_item_img"><img src="./resources/icon/5.png" alt=""></div>
+            <span class="bottom_item_text">我的</span>
+        </div>
+
+    </div>
+
+</body>
+</html>

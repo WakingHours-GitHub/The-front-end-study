@@ -1,0 +1,84 @@
+<!-- 
+    制作一个网页, 上面有四个盒子, 高300px, 有背景和边框
+    要求网页宽度小于500px时, 垂直排列这4个盒子, 同时让盒子中的问题变大
+    屏幕宽度在500~800之间时候, 第一个盒子占一行, 剩下三个盒子在第二行并排
+    800以上, 4个盒子并排放一行
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        border: 5px ridge brown;
+        background-color: bisque;
+        height: 300px;
+        width: 50px;
+    }
+
+    .mid {
+        float: left;
+    }
+
+    .div1{
+            width: 250px;
+        }
+
+    /* 进行媒介查询 */
+    /* 小于什么什么时候生效, 使用max, 当大于什么什么生效时, 使用min */
+    @media screen and (max-width: 700px) {
+        /* 小于700px时 */
+        div {
+            border: 5px ridge brown;
+            background-color: rgb(108, 194, 113);
+            font-size: 50px;
+            height: 300px;
+            width: 300px;
+        }
+
+    }
+
+    @media screen and (max-width: 700px) and (min-width: 1100px) {
+        .div1{
+            width: 300px;
+        }
+        div {
+            border: 5px ridge brown;
+            background-color: rgb(20, 111, 176);
+            font-size: 70px;
+            height: 300px;
+            width: 300px;
+        }
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        div {
+            border: 5px ridge brown;
+            background-color: rgb(223, 44, 53);
+            font-size: 70px;
+            height: 300px;
+            width: 300px;
+        }
+
+        .large {
+            float: left;
+        }
+    }
+    
+</style>
+
+<body>
+    <div class="large div1">第一个盒子</div>
+    <div class="large mid div2">第二个盒子</div>
+    <div class="large mid div3">第三个盒子</div>
+    <div class="large mid div4">第四个盒子</div>
+
+</body>
+
+</html>
