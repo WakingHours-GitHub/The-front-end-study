@@ -1,0 +1,174 @@
+*{margin: 0 ; padding: 0}
+body{background: #191919;overflow: hidden;}
+ 
+ 
+/*时钟设置选项*/
+#option{
+    position: absolute;     top: 30px;
+    display: flex;  justify-content: center;    align-items: center;
+    line-height: 50px;  text-align: center;
+    height: 50px;
+    font-size: 20px;     color: #717171;
+}
+#option h6{
+    display: inline;
+    font-size: 20px;
+    margin-left: 20px;
+}
+#option span{font-size: 12px; margin-left: 10px}
+/**
+*更改checkbox样式
+ */
+/*隐藏默认的checkbox复选框*/
+#option input[type=checkbox]{visibility: hidden;}
+/*滑动背景*/
+.checkButton{
+    position: relative;
+    display: inline-block;
+    width: 50px;    height: 20px;
+    border-radius: 15px;    border: 2px solid #3b84dd;
+    background: #191919;
+}
+/*滑轨*/
+.checkButton:after{
+    position: absolute; left: 5px;    top: 9px;
+    z-index: 1;/*隐藏在滑块下*/
+    content: '';
+    width:40px ;    height: 1px;
+    background: white;
+}
+/*滑块*/
+#option  label{
+    position: absolute;     left: 5px;
+    z-index: 2;/*显示在滑块上*/
+    width: 10px;    height: 10px;
+    margin-top: 3px;
+    border-radius: 100%;    border: 1px solid #25f7ff;
+    background: #3b84dd;
+    box-shadow: 1px 1px 3px #25f7ff;
+    animation: bounceBack 1s forwards ease-in-out;
+}
+/*!!!!!必须使用+选择器选择相邻的兄弟元素之后才能操作后边的元素*/
+#option input[type=checkbox]:checked+.checkButton label{
+   animation: bounce 1s forwards ease-in-out;
+}
+@keyframes bounce {
+    0%{left: 5px}
+    90%{left: 40px}
+    100%{left: 35px}
+}
+@keyframes bounceBack {
+    0%{left: 35px}
+    90%{left: 0}
+    100%{left: 5px}
+}
+ 
+ 
+ 
+/*弹性盒容器*/
+#flexContainer{
+    display: flex;   /*子元素的布局方式在父元素设置*/
+    justify-content: center; /*水平居中*/
+    align-items: center;/*垂直居中*/
+    width: 100%;    height: 100vh;
+    /*设置高度后align-items才生效*/
+    /*1vh=1%屏幕高度*/
+    background: #191919
+}
+/**
+*时钟背景
+ */
+#clockContainer{
+    display: flex; justify-content: center; align-items: center;
+    width: 95%;     height: 350px;
+    border: 5px solid #5d5d5d;  border-radius: 15px;
+    background: #242424;
+}
+/**
+*翻页数字容器
+ */
+.flipNumber{
+    position:relative;   box-sizing: border-box;
+    width: 14%;   height: 300px;    margin-left: 1.4%;
+    text-align: center;     font-size: 300px;      line-height: 300px;
+    background: #ffffff;
+    box-shadow: 1px 1px 5px black;
+}
+/**
+*时间分隔符
+ */
+.divide{
+    width: 2%;  height: 100px;  line-height: 100px;
+    margin-left: 1%;    font-size: 6rem;
+    color:#717171;    text-align: center;
+}
+ 
+/**
+*页样式,用前后伪元素实现翻页的样式
+*前后伪元素的值为.time中data-number属性的值
+*before是上半页，after是下半页
+*伪元素一个：是css2写法,两个：：是css3写法
+ */
+.time::before, .time::after{
+    content: attr(data-number);
+    position: absolute;     left: 0;    right: 0;
+    overflow: hidden;
+    color: #717171;     background: #191919;
+    perspective: 100px;      -webkit-perspective: 160px;
+}
+.time::before{
+    top:0;   bottom: 50%;
+    border-bottom: 1px solid #717171;/*转轴*/
+}
+.time::after{
+    top:50%;    bottom: 0;
+    line-height: 0;
+}
+/*翻转前*/
+.flipNumber .front::after , .flipNumber .back::before{z-index: 1;}
+.flipNumber .back::after{
+    z-index: 2;
+    transform-origin: center top;    -webkit-transform-origin: center top;
+    transform: rotateX(0.5turn);/*转半圈*/     -webkit-transform: rotateX(0.5turn);
+}
+.flipNumber .front::before{z-index: 3;}
+ 
+/*翻转后*/
+.flipNumber.running .front::before{
+    transform-origin: center bottom;    -webkit-transform-origin: center bottom;
+    animation: frontFlipDown 0.6s ease-in-out;      -webkit-animation: frontFlipDown 0.6s ease-in-out;
+    box-shadow: 0 -2px 6px rgba(255, 255, 255, 0.3);
+    backface-visibility: hidden;/*隐藏背面*/     -webkit-backface-visibility: hidden;
+}
+.flipNumber.running .back::after{
+    animation: backFlipDown 0.6s ease-in-out;   -webkit-animation: backFlipDown 0.6s ease-in-out;
+}
+ 
+/*十二小时制下提示上下午*/
+#twelve{
+    display: none;
+    position: absolute;     bottom: 100px;      right: 40px;
+    width: 100px;   height: 50px;   line-height: 50px;
+    text-align: center;
+    border: 5px solid #5d5d5d;  border-radius: 15px;
+    font-size:25px;     color: #717171;
+}
+ 
+ 
+ 
+/**
+*动画
+*/
+@keyframes frontFlipDown {
+    to{transform:rotateX(0.5turn)}
+}
+@keyframes backFlipDown {
+    to{transform: rotateX(0)}
+}
+ 
+@-webkit-keyframes frontFlipDown {
+    to {-webkit-transform: rotateX(0.5turn);}
+}
+@-webkit-keyframes backFlipDown {
+    to {-webkit-transform: rotateX(0);}
+}

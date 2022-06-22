@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格属性</title>
+</head>
+<body>
+        <!-- 这些属性要写到表格标签table 里面去 -->
+        <table align="center" border="" cellpadding="2" cellspacing="0" width="600" height="200">
+            <tr><th>姓名</th>  <th>性别</th> <th> 年龄 </th></tr>
+            <tr><td>刘德华</td>  <td>男</td> <td> 56 </td></tr>
+            <tr><td>张学友</td>  <td>男</td> <td> 58 </td></tr>
+            <tr><td>郭富城</td>  <td>男</td> <td> 51 </td></tr>
+            <tr><td>黎明</td>  <td>男</td> <td> 57 </td></tr>
+        </table>
+
+    
+</body>
+</html>
+<!--
+    表格属性
+        表格标签这部分我们实际开发并不常用, 实际上后面都是通过css来设定的.
+        这里学习目的有两个:
+            1.记住英语单词, 后面css会用
+            2.直观的感受表格的外观形态
+        
+        属性名       属性值                      描述
+        align        left, center, right     规定表格相对周围元素的对齐方式
+        border       1 或 ""                 规定表格单元是否拥有边框, 默认为"",表示没有边框
+        cellpadding  像素值                  规定单元边沿与其内容之间的空白, 默认为1像素
+        cellspacing  像素值                  规定单元格之间的空白, 默认两像素
+        width        像素值或百分比           规定表格的宽度
+        height       像素值或者百分比          规定表格高度
+        
+        这些属性要写到<table>里面去
+        说明一下:
+            cellpadding是单元格中文字到左边边框之间的距离
+            cellspacing是单元格和单元格之间的距离
+            单位: 像素
+-->
