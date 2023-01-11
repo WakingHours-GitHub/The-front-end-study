@@ -5,12 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 <body>
-    <div>
-        <div></div>
-        <div></div>
+    <div style="padding: 0 0; margin: 0 0; align-items: center; ;">
+        <div>
+            <video width="320" height="240" controls id="non_processed_video">
+                <source src="./video3.mp4" type="video/mp4">
+                </object> 
+            </video>
+        </div>
+        <div>
+            <video width="320" height="240" controls id="processed_video">
+                <source src="" type="video/mp4">
+                </object> 
+            </video>
+        </div>
     </div>
+    <button onclick="folder_recursive(new Folder('D:\\VsCode\\leading_end\\测试\\processed\\'))">点击这里</button>
     
+<script>
+    // 遍历本地文件夹内文件名
+    // var FF = new Folder("D:\\VsCode\\leading_end\\测试\\processed");
+    
+    // folder_recursive(FF);
+    // 文件夹遍历加判断
+    function folder_recursive(folderGroup) {
+        alert("FUCK")
+        // 获取文件夹所有文件与文件夹
+        var files = folderGroup.getFiles();
+    
+        for (var i = 0; i < files.length; i++) {
+            var file = files[i];
+            // 判断当前属性是否为文件夹，如果是，则继续遍历
+            if (file instanceof Folder) {
+                //对每个文件夹逐个操作
+                folder_recursive(file);
+                continue;
+            }
+            // 比如对每个文件进行处理 比如查看文件名
+            alert(file.fsName)
+        }
+    }
+    </script>
 </body>
 </html>
